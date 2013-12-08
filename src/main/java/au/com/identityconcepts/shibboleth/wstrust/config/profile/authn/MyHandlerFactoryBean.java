@@ -31,11 +31,8 @@ public class MyHandlerFactoryBean extends AbstractLoginHandlerFactoryBean{
     @Override
     protected Object createInstance() throws Exception {
         MyloginHandler handler = new MyloginHandler(authenticationServletURL);
- 
         populateHandler(handler);
- 
-        return handler;
- 
+        return handler; 
     }
  
     @Override
